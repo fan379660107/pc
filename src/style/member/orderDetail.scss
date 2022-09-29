@@ -1,0 +1,455 @@
+.sld_order_detail {
+    width: 1200px;
+    margin: 0 auto;
+
+    .container {
+        width: 100%;
+        border: 1px solid #d9d9e4;
+        background-color: white;
+
+        .top_info {
+            height: 185px;
+
+            .top_info_state {
+                width: 318px;
+                text-align: center;
+                height: 100%;
+                position: relative;
+                border-right: 1px solid #d9d9e4;
+
+                .state {
+                    font-size: 20px;
+                    text-align: center;
+                    font-family: MicrosoftYaHei-Bold;
+                    font-weight: 600;
+                    color: $colorMain2;
+                }
+
+                .refuse_reason {
+                    padding-top: 25px;
+                    color: #666666;
+                }
+
+                .oprate_btn {
+                    display: inline-block;
+                    height: 27px;
+                    line-height: 25px;
+                    padding: 0 12px;
+                    color: $colorMain2;
+                    margin: 15px auto 0;
+                    border: 1px solid $colorMain2;
+                    -webkit-border-radius: 2px;
+                    -moz-border-radius: 2px;
+                    border-radius: 2px;
+                }
+
+                .cancel {
+                    position: absolute;
+                    bottom: 15px;
+                    span {
+                        display: inline-block;
+                        padding: 0 10px;
+                    }
+                    span:nth-child(2) {
+                        border-left: 1px solid #bbbbbb;
+                    }
+                    span:hover {
+                        color: $colorMain2;
+                    }
+                }
+            }
+
+            .top_info_progress {
+                width: 880px;
+
+                .progress_item {
+                    .progress {
+                        text-align: center;
+                        margin-top: 20px;
+
+                        span {
+                            position: relative;
+                            display: inline-block;
+                            width: 24px;
+                            height: 24px;
+                            line-height: 14px;
+                            border: 5px solid #eeeeee;
+                            border-radius: 50%;
+                            color: #9f9f9f;
+                            z-index: 2;
+
+                            &.active {
+                                border: 5px solid #2abf5c;
+                                color: #2abf5c;
+                            }
+                        }
+
+                        .progress_line {
+                            width: 140px;
+                            height: 6px;
+                            background-color: #eeeeee;
+                            z-index: 1;
+                            .content {
+                                width: 100%;
+                                height: 100%;
+                                &.active {
+                                    background-color: #2abf5c;
+                                }
+                                &.current {
+                                    width: 60%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .logistics_info {
+            height: 185px;
+            border-top: 1px solid #d9d9e4;
+
+            .logistics_info_left {
+                height: 100%;
+                width: 318px;
+                border-right: 1px solid #d9d9e4;
+
+                .image {
+                    width: 80px;
+                    height: 80px;
+                    overflow: hidden;
+
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+
+                .info {
+                    margin-left: 18px;
+
+                    p {
+                        line-height: 20px;
+                    }
+                }
+            }
+
+            .logistics_info_right {
+                width: 880px;
+                ::-webkit-scrollbar {
+                    width: 0 !important;
+                }
+
+                ::-webkit-scrollbar {
+                    width: 0 !important;
+                    height: 0;
+                }
+                .right_container {
+                    width: 95%;
+                    height: 150px;
+                    margin: 0 auto;
+                    overflow-y: scroll;
+                    img {
+                        width: 140px;
+                        height: 78px;
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+                    p {
+                        color: #1c1c1c;
+                        font-size: 16px;
+                        margin-top: 40px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .order_info,
+        .shop_info {
+            border-top: 1px solid #d9d9e4;
+            padding: 24px 45px 0 45px;
+            width: 100%;
+
+            p {
+                color: #1c1c1c;
+                font-size: 16px;
+                line-height: 35px;
+                font-weight: 600;
+            }
+
+            .order_info_item {
+                div {
+                    width: 50%;
+                    line-height: 30px;
+                    color: #333333;
+
+                    span {
+                        color: #999999;
+                    }
+                }
+            }
+        }
+
+        .order_mark {
+            padding: 24px 45px 0 45px;
+            width: 100%;
+            margin-bottom: 20px;
+            p {
+                color: #1c1c1c;
+                font-size: 16px;
+                line-height: 35px;
+                font-weight: 600;
+            }
+            .order_mark_item {
+                width: 100%;
+                line-height: 30px;
+                color: #999999;
+                span {
+                    color: #999999;
+                }
+            }
+        }
+
+        .shop_info {
+            width: 100%;
+            // margin-top: 40px;
+            border-top: none;
+
+            .shop_title {
+                width: 100%;
+                height: 36px;
+                background-color: #efeff3;
+                line-height: 36px;
+
+                .detail {
+                    width: 60%;
+                    text-align: center;
+                }
+
+                .price {
+                    flex: 1;
+                    text-align: center;
+                }
+
+                .num {
+                    width: 15%;
+                    text-align: center;
+                }
+                .oprate {
+                    width: 15%;
+                    text-align: center;
+                }
+            }
+
+            .good_item {
+                height: 126px;
+                padding: 30px 0;
+                // &:not(:first-child){
+                //     border-top: 1px solid #E8E8F1;
+                // }
+                border-top: 1px solid #e8e8f1;
+                .good_info {
+                    width: 60%;
+
+                    .image {
+                        width: 64px;
+                        height: 64px;
+                        border: 1px solid #efeff3;
+
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
+                    }
+
+                    .good_info_con {
+                        margin-left: 10px;
+
+                        .name,
+                        .spec {
+                            margin-top: 5px;
+                        }
+                        .gift {
+                            display: inline-block;
+                            border: 1px solid #e2231a;
+                            color: #e2231a;
+                            width: 33px;
+                            height: 16px;
+                            border-radius: 3px;
+                            font-size: 12px;
+                            line-height: 16px;
+                            text-align: center;
+                            margin-right: 4px;
+                        }
+
+                        a {
+                            color: #333;
+                        }
+                    }
+                }
+
+                .price {
+                    flex: 1;
+                    text-align: center;
+                }
+                .num {
+                    width: 15%;
+                    text-align: center;
+                }
+                .oprate {
+                    width: 15%;
+                    text-align: center;
+                    &:hover {
+                        color: $colorMain2;
+                    }
+                }
+            }
+        }
+
+        .settle_info {
+            border-top: 1px solid #d9d9e4;
+            text-align: right;
+            padding: 15px 46px 15px 0;
+            color: #666;
+            line-height: 30px;
+
+            p {
+                span {
+                    display: inline-block;
+                    width: 162px;
+                    color: #333;
+                }
+            }
+
+            .total {
+                color: #010101;
+                margin-top: 6px;
+
+                span {
+                    color: $colorMain;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .cancel_list_con,
+    .logistics_list_con {
+        width: 520px;
+        margin: 0 auto;
+        height: 300px;
+        overflow-y: scroll;
+
+        .reason_item {
+            padding: 0 30px;
+            height: 40px;
+            width: 100%;
+            margin-bottom: 15px;
+
+            img {
+                width: 18px;
+                height: 18px;
+            }
+
+            &.active {
+                background: #f8f8f8;
+            }
+        }
+    }
+
+    .confirm_cancel_btn {
+        width: 80px;
+        height: 30px;
+        background: $colorMain2;
+        border-radius: 3px;
+        line-height: 30px;
+        text-align: center;
+        color: white;
+        margin: 0 auto;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    .logistics_info {
+        width: 100%;
+        height: 86px;
+        background: #f8f8f8;
+        // border: 1px solid #DFDFDF;
+        font-size: 14px;
+        // padding: 20px;
+        // p:nth-child(2){
+        //     margin-top: 10px;
+        // }
+        // margin-bottom: 20px;
+    }
+
+    // 选择地址
+    .address_con {
+        height: 330px;
+        overflow-y: scroll;
+        width: 460px;
+        margin: 0 auto;
+        .address_item {
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+            width: 458px;
+            //    height: 104px;
+            box-sizing: border-box;
+            border: 1px solid #dfdfdf;
+            position: relative;
+            padding: 20px;
+            span:not(:first-child) {
+                margin-top: 12px;
+            }
+            .address_text {
+                display: flex;
+                div:first-child {
+                    white-space: nowrap;
+                }
+                div:last-child {
+                    word-break: break-all;
+                    line-height: 20px;
+                }
+            }
+            .selected {
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        .select {
+            border: 1px solid $colorMain2;
+        }
+    }
+}
+.select_reason_width {
+    width: 560px !important;
+
+    ::-webkit-scrollbar {
+        width: 0 !important;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0;
+    }
+}
+.select_address_width {
+    width: 500px !important;
+    ::-webkit-scrollbar {
+        width: 0 !important;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0;
+    }
+}
+.el-dialog__body {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}

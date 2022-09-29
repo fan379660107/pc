@@ -1,0 +1,271 @@
+.sld_my_balance {
+    width: 1007px;
+    margin-left: 10px;
+    float: left;
+
+    .top_info {
+        width: 100%;
+        height: 130px;
+        overflow: hidden;
+        padding-top: 25px;
+        background-color: white;
+
+        .total {
+            width: 296px;
+            height: 115px;
+            margin-right: 30px;
+            padding: 20px 32px 26px;
+            background: #F9F9F9;
+
+            .title {
+                color: #000000;
+                font-size: 14px;
+                font-family: Microsoft YaHei;
+                font-weight: 400;
+            }
+
+            .red {
+                color: $colorMain2;
+                font-size: 38px;
+                font-family: Microsoft YaHei;
+                font-weight: bold;
+                align-items: baseline;
+
+                .fixed {
+                    font-size: 26px;
+                }
+            }
+        }
+
+        .btn_con {
+            width: 310px;
+            height: 94px;
+            font-size: 16px;
+            text-align: center;
+
+            .recharge,
+            .putout {
+                display: inline-block;
+                width: 170px;
+                height: 40px;
+                line-height: 40px;
+                color: #FFFFFF;
+                font-size: 18px;
+                font-family: Microsoft YaHei;
+                font-weight: 400;
+                text-align: center;
+                border-radius: 4px;
+            }
+
+            .recharge {
+                background-color: $colorMain;
+            }
+
+            .putout {
+                margin-top: 18px;
+                background-color: #ff9e13;
+            }
+        }
+    }
+
+    .nav_list {
+        height: 85px;
+        line-height: 85px;
+        padding-left: 20px;
+        background-color: white;
+
+        .item {
+            position: relative;
+            width: 140px;
+            color: #222222;
+            font-size: 16px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            text-align: center;
+
+            &.active {
+                color: $colorMain;
+                font-weight: 600;
+                &:after {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    bottom: 20px;
+                    left: 50%;
+                    margin-left: -30px;;
+                    width: 60px;
+                    height: 2px;
+                    background: $colorMain;
+                }
+            }
+        }
+    }
+
+    .list_container {
+        width: 100%;
+        padding-bottom: 25px;
+        background-color: #FFFFFF;
+
+        .top_title,
+        .list_item {
+            height: 40px;
+            text-align: center;
+            background-color: #FEF3F2;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            .time {
+                width: 178px;
+                height: 40px;
+                // border-right: 1px solid #e3e3e3;
+            }
+
+            .num {
+                width: 113px;
+                height: 40px;
+                // border-right: 1px solid #e3e3e3;
+                &.green {
+                    color: #3fb091;
+                }
+                &.red {
+                    color: $colorMain2;
+                }
+            }
+
+            .reason {
+                flex: 1;
+            }
+        }
+
+        .top_title {
+            border: 1px solid #FEF3F2;
+        }
+        .list_item {
+            background-color: white;
+            border: 1px solid #F2F2F2;
+            border-top: none;
+        }
+
+        .putout {
+            line-height: 30px;
+            color: #333333;
+            height: 40px;
+            line-height: 40px;
+            font-size: 12px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+            .sn {
+                width: 130px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .time {
+                width: 180px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .money {
+                width: 120px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .extra {
+                width: 100px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .state {
+                width: 100px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .reason {
+                width: 110px;
+                margin-left: 10px;
+                margin-right: 10px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                cursor: default;
+                flex: none;
+            }
+            .operate {
+                width: 80px;
+                margin-left: 10px;
+                margin-right: 10px;
+                span {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .dialog_desc,
+    .dialog_desc2 {
+        line-height: 28px;
+        color: #121212;
+        font-size: 16px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 35px;
+        margin-bottom: 45px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .dialog_desc2 {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        &.error {
+            color: $colorMain;
+        }
+    }
+    .dialog_input {
+        display: block;
+        width: 378px;
+        height: 42px;
+        border: 1px solid #BFBFBF;
+        border-radius: 8px;
+        padding: 5px 10px;
+        margin: 0 auto 25px;
+    }
+    .dialog_btn {
+        padding: 15px 20px;
+        border-top: 1px solid #EEEEEE;
+
+        .dialog_cancle,
+        .dialog_set {
+            width: 76px;
+            height: 34px;
+            line-height: 34px;
+            font-size: 16px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            text-align: center;
+            background: #E73439;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .dialog_cancle {
+            color: #666262;
+            background: #E3E3E3;
+        }
+        .dialog_set {
+            color: #FFFFFF;
+            background: #E73439;
+            margin-left: 15px;
+        }
+    }
+}
+.el-pager li.active {
+    color: $colorMain;
+    cursor: default;
+}
+.el-pager li:hover {
+    color: $colorMain;
+}

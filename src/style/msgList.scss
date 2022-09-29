@@ -1,0 +1,135 @@
+// 消息列表
+.sld_msg_list{
+    width: 1010px;
+    float: left;
+    margin-left: 10px;
+    .msg_title{
+        color: #333333;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333333;
+        font-size: 16px;
+        font-weight: bold;
+        border-left: 2px solid $colorMain2;
+        margin: 12px 10px;
+        padding-left: 10px;
+    }
+    .msg_con{
+        display: block;
+        border: 1px solid #EEEEEE;
+        background-color: #fff;
+        margin-bottom: 70px;
+        padding-bottom: 20px;
+        .msg_con_top{
+            padding: 30px;
+            .msg_con_right{
+                .msg_del{
+                    width: 74px;
+                    background-color: $colorMain2;
+                    height: 24px;
+                    line-height: 24px;
+                    padding: 0 13px;
+                    border: none;
+                    color: #fff;
+                    font-size: 14px;
+                    margin-left: 10px;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    border-radius: 4px;
+                    img{
+                        width: 14px;
+                        height: 14px;
+                        margin-right: 6px;
+                    }
+                    span{
+                        line-height: 24px;
+                        color: #fff;
+                        font-size: 14px;
+                    }
+                }
+                .msg_read{
+                    width: 102px;
+                    background-color: #2CADFF;
+                    height: 24px;
+                    line-height: 24px;
+                    padding: 0 13px;
+                    border: none;
+                    color: #fff;
+                    font-size: 14px;
+                    margin-left: 10px;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    border-radius: 4px;
+                    img{
+                        width: 14px;
+                        height: 14px;
+                        margin-right: 6px;
+                    }
+                    span{
+                        line-height: 24px;
+                        color: #fff;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .msg_list{
+            width: 1010px;
+            .msg_list_pre{
+                margin-bottom: 20px;
+                .msg_pre_time{
+                    width: 100%;
+                    height: 52px;
+                    line-height: 52px;
+                    text-align: center;
+                }
+                .msg_pre{
+                    width: 850px;
+                    margin: 0 auto;
+                    border: 1px solid #DCDCDC;
+                    .msg_pre_title{
+                        height: 40px;
+                        line-height: 39px;
+                        border-bottom: 1px solid #DCDCDC;
+                        background-color: #F7F7F7;
+                        color: #666666;
+                        padding: 0 20px;
+                        .pre_title_right{
+                            font-size: 12px;
+                        }
+                    }
+                    .msg_content{
+                        min-height: 79px;
+                        padding: 0 20px;
+                        .msg_content_left{
+                            .msg_tips{
+                                display: inline-block;
+                                width: 12px;
+                                height: 12px;
+                                border-radius: 50%;
+                                background-color: $colorMain2;
+                                margin-right: 6px;
+                            }
+                            p{
+                                font-size: 14px;
+                                width: 550px;
+                            }
+                            .active{
+                                color: #AAAAAA;
+                            }
+                        }
+                        .msg_content_right{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cursor_pointer{
+        cursor: pointer;
+    }
+    .sld_page_bottom{
+        margin: 20px 60px 20px 20px;
+    }
+}
